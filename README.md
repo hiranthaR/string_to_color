@@ -2,6 +2,21 @@
 
 convert string to color
 
+### how to install
+
+This will add a line like this to your package's pubspec.yaml (and run an implicit `dart pub get`): 
+```yaml
+dependencies:
+  string_to_color: ^1.0.1
+```
+
+### import it
+Now in your Dart code, you can use: 
+
+```dart
+import 'package:string_to_color/string_to_color.dart';
+```
+
  ### how to use
 
  ```dart
@@ -9,4 +24,9 @@ convert string to color
  import 'package:string_to_color/string_to_color.dart';
 
  Color color = ColorUtils.stringToColor("name"); // returns `Color(0xff337a8b)`
+
+ String hexColor = ColorUtils.stringToHexColor("name"); //returns "0xff337a8b"
+
+
+ int hexInt = ColorUtils.stringToHexInt("name"); //returns "ff337a8b"
  ```
