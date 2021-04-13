@@ -1,13 +1,13 @@
-import 'package:flutter_test/flutter_test.dart';
+import 'dart:ui';
 
+import 'package:flutter_test/flutter_test.dart';
 import 'package:string_to_color/string_to_color.dart';
 
 void main() {
-  test('adds one to input values', () {
-    final calculator = Calculator();
-    expect(calculator.addOne(2), 3);
-    expect(calculator.addOne(-7), -6);
-    expect(calculator.addOne(0), 1);
-    expect(() => calculator.addOne(null), throwsNoSuchMethodError);
+  test('test color', () {
+    expect(ColorUtils.stringToColor("name"), Color(0xff337a8b));
+    expect(ColorUtils.stringToColor("name"), Color(0xff337a8b));
+    expect(ColorUtils.stringToColor(""), Color(0xff000000));
+    expect(ColorUtils.stringToColor(""), Color(0xff000000));
   });
 }
