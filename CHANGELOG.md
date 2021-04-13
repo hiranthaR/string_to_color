@@ -1,3 +1,4 @@
-## [0.0.1] - TODO: Add release date.
+## [1.0.0] - April 13, 2021
 
-* TODO: Describe initial release.
+### Added
+- String to color function
