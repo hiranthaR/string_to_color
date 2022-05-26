@@ -7,7 +7,7 @@ convert string to color
 This will add a line like this to your package's pubspec.yaml (and run an implicit `dart pub get`): 
 ```yaml
 dependencies:
-  string_to_color: ^1.0.1
+  string_to_color: ^2.0.0
 ```
 
 ### import it
