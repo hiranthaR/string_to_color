@@ -7,7 +7,7 @@ convert string to color
 This will add a line like this to your package's pubspec.yaml (and run an implicit `dart pub get`): 
 ```yaml
 dependencies:
-  string_to_color: ^1.0.1
+  string_to_color: ^2.0.0
 ```
 
 ### import it
@@ -23,10 +23,9 @@ import 'package:string_to_color/string_to_color.dart';
  import 'dart:ui';
  import 'package:string_to_color/string_to_color.dart';
 
- Color color = ColorUtils.stringToColor("name"); // returns `Color(0xff337a8b)`
+ Color color = ColorUtils.stringToColor("name"); // returns `Color(0xFF337A8B)`
 
- String hexColor = ColorUtils.stringToHexColor("name"); //returns "0xff337a8b"
+ String hexColor = ColorUtils.stringToHexColor("name"); //returns "0xFF337A8B"
 
-
- int hexInt = ColorUtils.stringToHexInt("name"); //returns "ff337a8b"
+ int hexInt = ColorUtils.stringToHexInt("name"); //returns 0xFF337A8B
  ```
